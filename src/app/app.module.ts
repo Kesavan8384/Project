@@ -9,13 +9,21 @@ import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatButtonModule} from '@angular/material/button';
 import {MatSelectModule} from '@angular/material/select';
+import { ProductComponent,addproduct } from './product/product.component';
+import { HomeComponent } from './home/home.component';
+import { SettingComponent } from './setting/setting.component';
+import {MatListModule} from '@angular/material/list';
+import {MatDialogModule} from '@angular/material/dialog';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ProductComponent,
+    HomeComponent,
+    SettingComponent,addproduct
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,FormsModule,ReactiveFormsModule,MatFormFieldModule,MatButtonModule, MatSelectModule,BrowserAnimationsModule,MatInputModule
+    AppRoutingModule,MatListModule,FormsModule,ReactiveFormsModule,MatFormFieldModule,MatButtonModule, MatSelectModule,BrowserAnimationsModule,MatInputModule,MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

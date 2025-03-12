@@ -24,7 +24,7 @@
 <p>name:{{this.name}}</p>
 <p>email:{{this.email}}</p> -->
 
-<div class="main" [formGroup]="form">
+<!-- <div class="main" [formGroup]="form">
   <h1>Form</h1>
 
   <mat-form-field appearance="fill">
@@ -53,10 +53,10 @@
     <button mat-raised-button color="primary" [disabled]="this.form.invalid" (click)="submit()">Submit</button>
   
    
-</div>
+</div> -->
 
 
-<table>
+<!-- <table>
   <thead>
     <tr>
       <th>Name</th>
@@ -75,21 +75,24 @@
 
 
 
-</table>
+</table> -->
 
 
 
+<!-- <app-product></app-product> -->
+<h1>Home</h1>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+<div class="main">
+  <div class="nav">
+    <mat-list>
+      <mat-list-item routerLink="product">product</mat-list-item>
+      <mat-list-item routerLink="setting">setting</mat-list-item>
+      
+     </mat-list>
+     
+   
+  </div>
+  <div>
+    <router-outlet></router-outlet>
+  </div>
+</div>

@@ -1,0 +1,36 @@
+.heading{
+    text-align: center;
+}
+
+.main{
+padding: 20px;
+}
+
+.main-body{
+display: flex;
+flex-direction: column;
+}
+
+.main-footer{
+display: flex;
+justify-content: space-around;
+
+}
+
+th{
+    border: 1px solid;
+}
+
+td{
+    border: 1px solid;
+}
+
+table{
+    border: 1px solid;
+}
+
+.content{
+    display: flex;
+    align-items: flex-start;
+    gap: 75px;
+}

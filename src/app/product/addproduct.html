@@ -1,0 +1,32 @@
+<h1 class="heading">Add Product</h1>
+
+<div class="main" [formGroup]="productform">
+    <div class="main-body">
+        <mat-form-field appearance="fill">
+            <mat-label>Product Name</mat-label>
+            <input matInput formControlName="product_name">
+            <mat-error>Field is Required</mat-error>
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>Product code</mat-label>
+            <input matInput formControlName="product_code">
+            <mat-error>Field is Required</mat-error>
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>Price</mat-label>
+            <input matInput formControlName="price">
+            <mat-error>Field is Required</mat-error>
+          </mat-form-field>
+    </div>
+   
+    <div class="main-footer">
+        <button mat-raised-button color="primary" (click)="Save()" [disabled]="this.productform.invalid">Save</button>
+        <button mat-raised-button color="warn" mat-dialog-close>Cancel</button>
+    </div>
+     
+</div>
+
+
+
+
+

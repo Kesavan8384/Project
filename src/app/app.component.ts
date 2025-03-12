@@ -23,8 +23,8 @@ export class AppComponent {
   // userform = this.formbuilder.group({name:'',email:''})
 
 
-form=this.formbuilder.group({name:['',[Validators.required]],age:['',[Validators.required]],gender:['',Validators.required]})
-record:any[]=[]
+// form=this.formbuilder.group({name:['',[Validators.required]],age:['',[Validators.required]],gender:['',Validators.required]})
+// record:any[]=[]
 
   constructor(private formbuilder:FormBuilder){
     // this.userform.controls.name.setValue(this.name)
@@ -48,13 +48,13 @@ record:any[]=[]
   // }
 
 
-  submit(){
+  // submit(){
     
-    this.record.push(this.form.value)
-    this.form.reset()
+  //   this.record.push(this.form.value)
+  //   this.form.reset()
     
 
-  }
+  // }
 
   
 
