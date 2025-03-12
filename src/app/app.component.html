@@ -1,0 +1,95 @@
+<!-- <h1>Hello World</h1>
+
+
+<h2>{{ this.age}}</h2>
+
+
+
+<div [formGroup]="userform">
+
+  <mat-form-field class="example-full-width">
+    <mat-label>Name</mat-label>
+    <input matInput formControlName="name"  [value]="this.name">
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>Email</mat-label>
+    <input matInput formControlName="email"  [value]="this.email">
+  </mat-form-field>
+
+</div>
+<button mat-raised-button color="primary" (click)="onsubmit()">Submit</button>
+
+
+<p>name:{{this.name}}</p>
+<p>email:{{this.email}}</p> -->
+
+<div class="main" [formGroup]="form">
+  <h1>Form</h1>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Name</mat-label>
+    <input matInput formControlName="name">
+    <mat-error>Field is Required</mat-error>
+  </mat-form-field>
+  
+  <mat-form-field appearance="fill">
+    <mat-label>Age</mat-label>
+    <input matInput formControlName="age">
+    <mat-error>Field is Required</mat-error>
+  </mat-form-field>
+  
+  <mat-form-field appearance="fill">
+    <mat-label>Gender</mat-label>
+    <mat-select formControlName="gender">
+      <mat-option value="Male">Male</mat-option>
+      <mat-option value="Female">Female</mat-option>
+      
+    </mat-select>
+    
+  </mat-form-field>
+
+
+    <button mat-raised-button color="primary" [disabled]="this.form.invalid" (click)="submit()">Submit</button>
+  
+   
+</div>
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Gender</th>
+    </tr>
+  </thead>
+ <tbody>
+  <tr *ngFor="let item of record">
+    <td>{{item.name}}</td>
+    <td>{{item.age}}</td>
+    <td>{{item.gender}}</td>
+
+  </tr>
+ </tbody>
+
+
+
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
